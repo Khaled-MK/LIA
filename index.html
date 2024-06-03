@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>LIA</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+      <link rel="stylesheet" href="./css/master.css" />
+   </head>
+   <body class="select-none">
+      <header class="">
+         <section class="headSec relative overflow-hidden">
+            <video autoplay muted loop class="bgVideo absolute">
+               <source src="./imgs/bg_video_3.mp4" type="video/mp4" />
+            </video>
+
+            <div class="fixed top-0 left-0 w-full h-28 flex flex-col lg:flex-row z-10 bg">
+               <div class="w-full h-20 lg:h-full lg:w-2/3 px-8 lg:px-5 flex items-center justify-between lg:justify-around z-20">
+                  <h1 class="text-white text-4xl font-bold">LOGO</h1>
+
+                  <div class="relative flex">
+                     <img src="./imgs/search.svg" alt="" class="h-8 md:hidden cursor-pointer select-none" />
+                     <div class="w-[500px] h-8 rounded-md bg-white items-center shadow-md hidden md:flex">
+                        <input id="searchBar" type="search" class="w-[436px] h-full bg-white px-2 rounded-l-md focus:outline-none" name="" autocomplete="none" />
+                        <div class="w-[64px] h-8 bg-blue-800 rounded-r-md flex justify-center items-center cursor-pointer select-none">
+                           <img src="./imgs/search.svg" alt="" class="h-7" />
+                        </div>
+                     </div>
+
+                     <div id="rechRes" class="hidden"></div>
+                  </div>
+               </div>
+               <div class="h-8 w-full lg:w-1/3 px-5 flex justify-center lg:h-full items-end text-[16px]">
+                  <div class="flex text-white justify-between w-5/6">
+                     <a href="index.html" class="relative font-semibold">NOUS <span class="under"></span> </a>
+                     <a href="formations.html" class="relative">FORMATIONS </a>
+                     <a href="contact.html" class="relative">CONTACT </a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="absolute text-div uppercase font-semibold text-white text-center text-4xl">
+               <p class="tracking-in-expand">Ou l'apprentissage</p>
+               <p class="tracking-in-expand">mène à la transformation</p>
+            </div>
+         </section>
+      </header>
+
+      <section class="bg-white py-4 lg:flex">
+         <div id="cat" class="my-8 lg:w-1/2 px-20">
+            <h2 class="text-xl font-semibold text-center"><span>NOUS</span> <span class="">... Construisons des programmes de formation, des ateliers et des cours personnalisés</span></h2>
+            <div class="my-6 flex flex-col justify-center items-center sm:flex-row gap-x-10 sm:justify-around">
+               <div class="imgDiv min-w-[220px] max-w-[220px] h-[293px] object-cover rounded-lg relative overflow-hidden my-6 cursor-pointer select-none">
+                  <img src="./imgs/indiv.jpg" alt="" class="w-full h-full object-cover absolute top-0 right-0" />
+                  <div class="absolute top-0 left-0 w-full h-full filDiv"></div>
+                  <h4 class="absolute top-[200px] left-0 px-2 text-sm font-semibold text-white z-10">Pour les individus :</h4>
+                  <p class="absolute top-[220px] left-0 px-2 text-sm text-white z-10">étudiants, professionnels, entrepreneur, artistes et créateurs</p>
+               </div>
+
+               <div class="imgDiv min-w-[220px] max-w-[220px] h-[293px] object-cover rounded-lg relative overflow-hidden my-6 cursor-pointer select-none">
+                  <img src="./imgs/groupe.jpg" alt="" class="w-full h-full object-cover absolute top-0 right-0" />
+                  <div class="absolute top-0 left-0 w-full h-full filDiv"></div>
+                  <h4 class="absolute top-[200px] left-0 px-2 text-sm font-semibold text-white z-10">Pour les Entreprises:</h4>
+                  <p class="absolute top-[220px] left-0 px-2 text-sm text-white z-10">startups, sociétés, fondations, institutions éducatives et publiques.</p>
+               </div>
+            </div>
+         </div>
+         <div class="mx-auto my-7 lg:w-1/2 px-20 overflow-hidden">
+            <h2 class="text-lg md:text-xl font-semibold text-center">Investissez dans votre carrière académique/professionnelle</h2>
+
+            <ul id="lista" class="lista my-[70px] lg:h-[300px] flex flex-col justify-between">
+               <li class="my-4 invest-List">Apprenez ce dont vous avez besoin à travers des formations académiques et professionnelles personnalisées.</li>
+               <li class="my-4 invest-List">Économisez de l'argent en vous inscrivant à plusieurs formations ou ateliers de travail.</li>
+               <li class="my-4 invest-List">Bénéficiez d'un encadrement personnalisé de nos formateurs dévoués.</li>
+               <li class="my-4 invest-List">Profitez d'évaluations diverses et de retours réguliers pour garantir votre réussite.</li>
+            </ul>
+         </div>
+      </section>
+      <section class="bg-white leading-relaxed flex flex-col">
+         <div class="mt-8 px-3 py-4 bg-bluu">
+            <p class="text-center font-semibold text-xl text-white">Tutorat universitaire - formations en langues étrangères - formations qualifiantes</p>
+         </div>
+         <div class="bg-slate-300 mt-4 mb-8 py-3 flex flex-col justify-center items-center">
+            <h1 class="mt-2 mb-4 text-center font-semibold text-xl">Nos formateurs ont collaboré avec :</h1>
+            <div class="tag-list relative overflow-hidden w-5/6">
+               <div class="inner flex gap-24">
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/AT.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/janssen.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/Air_Algérie_Logo.svg.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/logo-sonelgaz.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/ETB.jpg" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/iracadmy.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/AT.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/janssen.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/Air_Algérie_Logo.svg.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/logo-sonelgaz.png" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/ETB.jpg" alt="" class="" /></div>
+                  <div class="h-24 w-24 object-cover overflow-hidden rounded-md flex items-center justify-center"><img src="./imgs/iracadmy.png" alt="" class="" /></div>
+               </div>
+               <div class="fade"></div>
+            </div>
+         </div>
+         <div class="px-10 my-8">
+            <h3 class="font-bold text-2xl text-center lg:text-left my-3">Cellules que vous pouvez intégrer chez LIMITLESS INSTITUTE</h3>
+            <h4 class="my-2 font-semibold">La cellule du Tutorat universitaire:</h4>
+            <p class="my-2 text-justify">Les programmes de tutorat universitaire sont conçus pour offrir un soutien académique aux étudiants en mettant en place des séances de tutorat individualisées ou en groupe. Ces programmes couvrent <span class="text-red-600">divers aspets</span> <a href="formations.html" class="text-blue-600 text-sm">... en savoir plus</a></p>
+
+            <h4 class="my-2 font-semibold">La cellule des Formations qualifiantes:</h4>
+            <p class="my-2 text-justify">Les programmes de formation professionnelle visent à préparer les individus à des carrières spécifiques ou à accompagner les professionnels en leur fournissant des compétences pratiques et spécialisées. Ils mettent l'accent sur l'acquisition de compétences directement applicables sur le marché du travail. <a href="formations.html" class="text-blue-600 text-sm">... en savoir plus</a></p>
+         </div>
+      </section>
+      <footer class="">
+         <div class="flex justify-between items-center px-10 bg-bluu h-44">
+            <div class="w-3/5">
+               <h3 class="text-white font-semibold text-3xl">Discutons ensemble de votre formation</h3>
+               <p class="text-white">Obtenez votre consultation gratuit</p>
+            </div>
+
+            <div class="w-1/5">
+               <a href="contact.html">
+                  <button id="contact" class="px-4 py-2 border-2 border-bluu text-bluu bg-white font-semibold rounded-md uppercase hover:bg-bluu hover:text-white">Prendre contact</button>
+               </a>
+            </div>
+         </div>
+      </footer>
+
+      <script src="./js/main.js"></script>
+      <script src="./js/commun.js"></script>
+   </body>
+</html>
+
+<!-- une div pour les classe utiliser en js, a supprimer a la fin -->
+<div class="hidden rounded-tl-md w-[390px] h-8 rounded-t-md rounded-br-md bg-white items-center shadow-md px-2 py-1 w-[326px] cursor-pointer select-none hover:bg-cyan-50 whitespace-pre-wrap text-ellipsis w-[500px] w-[436px] absolute w-[326px] top-8 bg-white border-t-2 border-gray-400 rounded-b-md py-2 flex"></div>
